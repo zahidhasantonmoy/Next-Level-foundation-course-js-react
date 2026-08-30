@@ -36,3 +36,16 @@ let students = [
     skills: ["PHP", "MySQL"]
   }
 ];
+
+function displayStudents(){
+ for( student of students)
+    console.log(student);
+
+
+}
+displayStudents();
+
+
+function findStudent(id){
+
+}
