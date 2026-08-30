@@ -121,10 +121,21 @@ function addStudent(name, age, department){
     },
     skills: ["PHP", "MySQL"]
   }
-
+ students.push(newstudent);
     }
    
 
 
 addStudent("Zahid",25,"CSE");
+
+
+ function deleteStudent(id){
+    for(let i=0; i<=students.length;i++){
+        if(students[i].id==id){
+            students.splice(i,1);
+            break;
+        }
+    }
+ }
+ deleteStudent(103);
 console.log(students)
