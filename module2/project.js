@@ -38,14 +38,28 @@ let students = [
 ];
 
 function displayStudents(){
- for( student of students)
-    console.log(student);
+ for(let student of students)
+    console.log(` ID: ${student.id} Name :${student.name} Department: ${student.department}`);
 
 
 }
 displayStudents();
 
-
+let id=null;
+let isfound=false;
 function findStudent(id){
+    for(student of students){
+        if( student.id==id){
+            console.log(` ID: ${student.id} Name :${student.name} Department: ${student.department}`);
+            isfound=true;
+            break;
+        }
+        
 
+    }
+        if(!isfound=false){
+            console.log(" Student not found");
+        }
 }
+
+findStudent(103);
