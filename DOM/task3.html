@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Student Dashboard</h1>
+
+<p id="status">Absent</p>
+
+<div id="studentCard"></div>
+
+<input id="studentName" type="text">
+
+<button id="updateBtn">Update</button>
+
+
+
+
+<script>
+const title=document.getElementById("title");
+title.textContent="My Coaching Dashboard";
+const status=document.getElementById("status");
+status.textContent="Present";
+console.log(status);
+ const studentCard=document.getElementById("studentCard");
+    studentCard.innerHTML=`
+    <p>Student: Zahid Hasan</p>
+    <p>Department: CSE</p>
+    <p>Status: Present</p>
+    `;
+ 
+    const inputText=document.getElementById("studentName");
+        
+     const updateBtn=document.getElementById("updateBtn");
+     updateBtn.addEventListener("click", ()=>{
+        studentCard.innerHTML=`
+    <p>Student: ${inputText.value}</p>
+    <p>Department: CSE</p>
+    <p>Status: Present</p>
+    `
+     })
+ 
+</script>
+</body>
+</html>
