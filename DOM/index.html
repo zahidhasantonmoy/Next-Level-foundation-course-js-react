@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 id="dashboardTitle">Student Dashboard</h1>
+
+<p class="student">Zahid</p>
+<p class="student">Rahim</p>
+<p class="student">Karim</p>
+
+<button id="addBtn">Add Student</button>
+
+<div class="card">
+    <p>Attendance: Present</p>
+</div>
+
+<!-- 1. dashboardTitle
+2. first student
+3. all students
+4. add button
+5. attendance paragraph inside .card -->
+
+
+<script>
+    let dash=document.getElementById("dashboardTitle");
+    console.log(dash);
+
+    let all=document.querySelectorAll(".student");
+    console.log(all);
+    let addbtn=document.querySelector("#addBtn");
+    console.log(addbtn);
+    let attendence=document.querySelectorAll(".card p");
+    console.log(attendence);
+</script>
+
+</body>
+</html>
