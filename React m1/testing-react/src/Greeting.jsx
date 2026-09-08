@@ -1,8 +1,18 @@
-export default function Greeting({ name }) {
+export default function Greeting() {
+const Student= "Zahid";
+const Department= "CSE";
+const Age= 22;
+
   return (
+
+<>
     <div>
-      <p>Hello Zahid</p>
-      <p>I am learning React!</p>
+         Student: {Student}
+         
+        Department: {Department}
+      
+        Age: {Age}
     </div>
+    </>
   );
 }
