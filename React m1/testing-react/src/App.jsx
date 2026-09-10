@@ -9,6 +9,7 @@ import StudentCard from './StudentCard.jsx'
 import UserProfile from './UserProfile.jsx'
 import StudentList from './StudentList.jsx'
 import CounterButton from './CounterButton.jsx'
+import StudentInput from './StudentInput.jsx'
 function App() {
  return ( 
   <>
@@ -24,6 +25,9 @@ function App() {
 
   <StudentList/> */}
 <CounterButton/>
+
+
+<StudentInput/>
   </>
   );
 }
